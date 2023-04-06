@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>zebra</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>serv1</display-name>
+    <servlet-name>serv1</servlet-name>
+    <servlet-class>servilets.serv1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv1</servlet-name>
+    <url-pattern>/serv1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>serv2</display-name>
+    <servlet-name>serv2</servlet-name>
+    <servlet-class>servilets.serv1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serv2</servlet-name>
+    <url-pattern>/serv2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SignUp</display-name>
+    <servlet-name>SignUp</servlet-name>
+    <servlet-class>servilets.SignUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/SignUp</url-pattern>
+  </servlet-mapping>
+</web-app>
